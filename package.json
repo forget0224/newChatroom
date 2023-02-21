@@ -10,6 +10,7 @@
     "css": "tailwind build tailwind.css -o ./src/index.css"
   },
   "dependencies": {
+    "dayjs": "^1.11.7",
     "firebase": "^9.17.1",
     "vue": "^3.2.45",
     "vuefire": "^3.0.1"
