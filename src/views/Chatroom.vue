@@ -24,8 +24,10 @@ const username = ref("");
 
 
 const tempUsername = ref("");
+const sendBtn=ref("send")
 const addUsername = function () {
   username.value = tempUsername.value;
+  sendBtn.value="done"
   //   username.value='';
 };
 
@@ -90,8 +92,8 @@ const addMessage = () => {
           />
           <input
             type="button"
-            value="send"
-            class="rounded bg-slate-500 text-slate-100 ml-3 w-16"
+            v-model="sendBtn"
+            class="rounded bg-slate-500 text-slate-100 ml-3 w-16 hover:bg-slate-400 hover:cursor-pointer"
             @click="addUsername"
           />
         </div>
