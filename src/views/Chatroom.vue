@@ -104,7 +104,7 @@ const addMessage = () => {
         <template v-for="item in chatroomRefList" :key="item.id">
           <!-- <template v-if="item.username !== tempUsername"> -->
             <div class="message-other  h-36 flex flex-wrap relative" >
-              <div class="flex h-20 max-w-[80%] min-w-[60%] m-auto items-center bg-white  absolute  shadow-lg" :class="[{ ' left-8  rounded-tl-lg rounded-tr-lg rounded-br-lg': item.username != username } ,{ ' right-8 rounded-tl-lg rounded-tr-lg rounded-bl-lg flex-row-reverse': item.username == username }]">
+              <div class="flex h-20 max-w-[80%] min-w-[60%] m-auto items-center   absolute  shadow-lg" :class="[{ ' left-8  rounded-tl-lg rounded-tr-lg rounded-br-lg bg-white': item.username != username } ,{ ' right-8 rounded-tl-lg rounded-tr-lg rounded-bl-lg flex-row-reverse bg-slate-200': item.username == username }]">
                 <div class="rounded-full bg-slate-300 w-16 h-16 self-auto flex justify-center " :class="[{ 'ml-3': item.username != username } ,{ 'mr-3': item.username == username }]"
                 ><span class="text-4xl justify-center  flex items-center font-mono">{{ item.username.slice(0, 1) }}</span></div>
                 <div class="ml-3 w-11/12">
