@@ -34,7 +34,7 @@ const addMessage = () => {
 <template >
   <div class="bg-slate-50 h-screen w-screen">
     <div class="container bg-slate-50 h-screen w-full m-auto flex">
-      <div class="left-side h-screen w-96 bg-slate-50">
+      <aside class="h-screen w-96 bg-slate-50">
         <div class="m-auto w-80">
           <h1 class="text-slate-500 text-3xl mt-40">Live Chat Room</h1>
           <div class="mt-20 text-slate-500 flex">
@@ -47,8 +47,8 @@ const addMessage = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div class="right-side h-screen  grow relative">
+      </aside>
+      <main class="h-screen grow relative">
         <div class="message-box  h-[85%] overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-slate-600">
           <template v-for="item in chatroomRefList" :key="item.id">
             <div class="message-other  h-36 flex flex-wrap relative">
@@ -83,7 +83,7 @@ const addMessage = () => {
               placeholder="type something.." v-model="message" @keyup.enter="addMessage" :disabled="!username" />
           </div>
         </div>
-      </div>
+      </main>
     </div>
   </div>
 </template>
