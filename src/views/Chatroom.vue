@@ -50,7 +50,7 @@ const addMessage = () => {
         </div>
       </aside>
       <main class="sm:h-screen grow relative h-[70%]">
-        <div class="message-box  h-[80%] overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-slate-600 sm:mt-10 mt-6 bg-[#cbd5e1] sm:w-[1000px] m-auto" >
+        <div class="message-box  h-[80%] overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-slate-600 sm:mt-10 mt-6 bg-[#cbd5e1] sm:w-[1000px] m-auto touch-auto" >
           <template v-for="item in chatroomRefList" :key="item.id">
             <div class="message-other  h-36 flex flex-wrap relative">
               <div class="flex h-20 max-w-[80%] min-w-[60%] m-auto items-center   absolute  shadow-lg mt-4"
