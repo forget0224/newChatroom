@@ -50,7 +50,7 @@ const addMessage = () => {
         </div>
       </aside>
       <main class="sm:h-screen grow relative h-[70%]">
-        <div class="message-box  h-[80%] overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-slate-600 sm:mt-10 mt-6 bg-[#cbd5e1] sm:w-[1000px] m-auto" >
+        <div class="message-box  h-[70%] overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-slate-600 sm:mt-10 mt-6 bg-[#cbd5e1] sm:w-[1000px] m-auto" >
           <template v-for="item in chatroomRefList" :key="item.id">
             <div class="message-other  h-36 flex flex-wrap relative">
               <div class="flex h-20 max-w-[80%] min-w-[60%] m-auto items-center   absolute  shadow-lg mt-4"
@@ -75,7 +75,7 @@ const addMessage = () => {
         </div>
 
         <div class="type-box absolute b-0 w-full h-16">
-          <div class="flex h-[100px] w-[80%] m-auto items-center">
+          <div class="flex h-[80px] w-[80%] m-auto items-center">
             <div class="rounded-full bg-slate-500 w-16 sm:h-16 h-14 self-auto flex justify-center">
               <span class="text-4xl justify-center  flex items-center font-mono">
                 {{ isLockName ? username.slice(0, 1) : '' }}</span>
