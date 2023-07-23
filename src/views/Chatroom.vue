@@ -33,8 +33,8 @@ const addMessage = () => {
 </script>
 
 <template >
-  <div class="bg-slate-50 h-screen w-screen">
-    <div class="container bg-slate-50 h-screen w-full m-auto flex sm:flex-row flex-col">
+  <div class="bg-slate-50 h-[calc(100vh-50px)] w-screen sm:h-screen">
+    <div class="container bg-slate-50 h-[calc(100vh-50px)] w-full m-auto flex sm:flex-row flex-col">
       <aside class="sm:h-screen h-[100px] w-96 bg-slate-50">
         <div class="m-auto w-80">
           <h1 class="text-slate-500 text-3xl sm:mt-40 pt-4">Live Chat Room</h1>
@@ -50,7 +50,7 @@ const addMessage = () => {
         </div>
       </aside>
       <main class="sm:h-screen grow relative h-[70%]">
-        <div class="message-box  h-[70%] overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-slate-600 sm:mt-10 mt-6 bg-[#cbd5e1] sm:w-[1000px] m-auto" >
+        <div class="message-box  h-[80%] overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-slate-600 sm:mt-10 mt-6 bg-[#cbd5e1] sm:w-[1000px] m-auto" >
           <template v-for="item in chatroomRefList" :key="item.id">
             <div class="message-other  h-36 flex flex-wrap relative">
               <div class="flex h-20 max-w-[80%] min-w-[60%] m-auto items-center   absolute  shadow-lg mt-4"
