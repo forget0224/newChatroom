@@ -75,7 +75,7 @@ const addMessage = () => {
         </div>
 
         <div class="type-box absolute b-0 w-full h-16">
-          <div class="flex h-[80px] w-[80%] m-auto items-center">
+          <div class="flex h-[84px] w-[80%] m-auto items-center">
             <div class="rounded-full bg-slate-500 w-16 sm:h-16 h-14 self-auto flex justify-center">
               <span class="text-4xl justify-center  flex items-center font-mono">
                 {{ isLockName ? username.slice(0, 1) : '' }}</span>
