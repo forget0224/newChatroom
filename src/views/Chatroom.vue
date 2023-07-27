@@ -33,8 +33,8 @@ const addMessage = () => {
 </script>
 
 <template >
-  <div class="bg-slate-50 h-[calc(100vh-96px)] w-screen sm:h-screen">
-    <div class="container bg-slate-50 h-[calc(100vh-96px)] w-full m-auto flex sm:flex-row flex-col">
+  <div class="bg-slate-50 h-[100dvh] w-screen sm:h-screen">
+    <div class="container bg-slate-50 h-[100dvh]  w-full m-auto flex sm:flex-row flex-col">
       <aside class="sm:h-screen h-[100px] w-96 bg-slate-50">
         <div class="m-auto w-80">
           <h1 class="text-slate-500 text-3xl sm:mt-40 pt-4">Live Chat Room</h1>
